@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  color: rgb(242, 170, 76);
+  background-color: rgb(16, 24, 32);
+  font-size: 14px;
+}
+
+a img {
+    display: inline-block;
+    width: auto;
+    height: auto;
+}
+
+a {
+    display: inline-block;
+}
+
+.indexinfo {
+    font-size: large
+}
+
+.pääsivunleijona {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    padding: 5px;
+}
+
+.linkit ul {
+    display: flex;             
+    justify-content: center;   
+    gap: 120px;                  
+    list-style: none;          
+    padding: 30px;
+    margin: 30px;
+    font-size: large
+}
+
+.linkit li {
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+.linkit li a {
+    display: block;
+    padding: 20px 60px;
+}
+
+.faktat {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    font-size: medium;
+}
+
+.f1, .f2, .f3 {
+    width: 350px;
+    padding: 15px;
+    margin: 15px auto;
+}
+
+.galleria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.galleria img {
+    width: 500px;
+    height: auto;
+    padding: 10px;
+}
+
+.lähteet {
+    font-size: large
+}
+
+
+@media (max-width:1240px) {
+    .galleria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 700px) {
+    .burger {
+        display: block;
+    }
+
+    .galleria {
+        grid-template-columns: 1fr;
+    }
+
+    .faktat, .linkit ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .f1, .f2, .f3, .galleria img {
+        width: 90%;
+    }
+}
+
+
+
+
