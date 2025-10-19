@@ -16,6 +16,7 @@ a img {
 
 a {
     display: inline-block;
+    color: white;
 }
 
 .indexinfo {
@@ -104,6 +105,7 @@ a {
         width: 90%;
     }
 }
+
 
 
 
